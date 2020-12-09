@@ -3,7 +3,7 @@
     "dataDictionary": {
       "Title": "PDS4 Data Dictionary" ,
       "Version": "1.14.0.0" ,
-      "Date": "Tue Aug 18 15:36:54 UTC 2020" ,
+      "Date": "Wed Dec 09 03:03:55 UTC 2020" ,
       "Description": "This document is a dump of the contents of the PDS4 Data Dictionary" ,
       "classDictionary": [
         {
@@ -745,6 +745,26 @@
             "unitOfMeasureId": "null" ,
             "unitId": "null" ,
             "defaultUnitId": "null"
+          , "PermissibleValueList": [
+              {"PermissibleValue": {
+                  "value": "Input" ,
+                  "valueMeaning": "this parameter specifies input data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "Log" ,
+                  "valueMeaning": "this parameter specifies log data" ,
+                  "isDeprecated": "false"
+                }
+             }
+            , {"PermissibleValue": {
+                  "value": "Output" ,
+                  "valueMeaning": "this parameter specifies output data" ,
+                  "isDeprecated": "false"
+                }
+             }
+           ]
           }
         }
       , {

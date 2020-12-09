@@ -3,7 +3,7 @@ PDS4 Processing Information Local Data Dictionary (LDD)
 
 ## Versions (Source)
 
-- [1.D.0.0](src/)
+- [src](src/)
 
 ## Builds
 
@@ -12,14 +12,15 @@ The build process insures compatiblity of the LDD with the core information mode
 
 This LDD has been built for the following versions of the PDS4 information model.
 
-- [1.D.0.0](build/1.D.0.0/)
+- [development](build/development/)
+- [1.D.0.0](build/release/1.D.0.0/)
 
 ## Notes
 
 Each build is generating using the [lddtool](https://pds.nasa.gov/pds4/software/ldd/) specific to a version of the [PDS4 Information Model](https://pds.nasa.gov/pds4/doc/im/). 
 
 ```
-lddtool.bat -lpsnJ PDS4_PROC_IngestLDD.xml
+lddtool -lpsnJ PDS4_PROC_IngestLDD.xml
 ```
 
 Documentation included in the source (src) directory is generated using the "pds-ldd-doc" tool in the [pds4-tools](https://github.com/nasa-pds/pds4-tools) package.

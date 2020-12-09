@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model
-    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch"
+    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.sch"
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
 <!-- PDS4 Local Data Dictionary Extended Ingest File for Imaging Node            -->
-<Ingest_LDD xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.xsd">
+<Ingest_LDD xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1E00.xsd">
     
     <name>Processing_Information</name>
-    <ldd_version_id>1.2.0.0</ldd_version_id>
-    <full_name>Jordan Padams</full_name>
+    <ldd_version_id>1.2.1.0</ldd_version_id>
+    <dictionary_type>Discipline</dictionary_type>
+    <full_name>Minh Le</full_name>
     <steward_id>img</steward_id>
     <namespace_id>proc</namespace_id>
-    <comment> The Processing_Information dictionary contains detailed information regarding the history of 
-                processing performed on data product(s) in order to produce the current product.
-    ## CHANGE LOG ##
-    1.2.0.0, T.M.Hare
-    - upgraded to v1.13.0.0 of the IM
-    - Allow Software to be many (unbounded) to allow for many applictions to be listed for one process.
+    <comment> The Processing_Information dictionary contains detailed information regarding the history 
+      of processing performed on data product(s) in order to produce the current product.
+                
+      ## CHANGE LOG ##
+      1.2.0.0, T.Hare
+      - upgraded to v1.13.0.0 of the IM
+      - Allow Software to be many (unbounded) to allow for many applictions to be listed for one process.
+    
+      1.2.1.0 T.Hare
+      - update for 1.E.0.0 and 1.F.0.0 and new github C.I. environment
+      - Changed all class local_identifier to identifier_reference per v1900 IM update
+    
     </comment>
-    <last_modification_date_time>2020-03-07T12:00:00Z</last_modification_date_time>
+    <last_modification_date_time>2020-12-08T20:00:00Z</last_modification_date_time>
     
     <!-- Attributes START -->
     
@@ -330,7 +337,7 @@
         using this class includes input products used to create a specific data product and the software and processes used to produce that product.</definition>
         <element_flag>true</element_flag>
         <DD_Association>
-            <local_identifier>pds.Local_Internal_Reference</local_identifier>
+            <identifier_reference>pds.Local_Internal_Reference</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
@@ -342,9 +349,9 @@
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>-->
         <DD_Association>
-            <local_identifier>XSChoice#</local_identifier>
-            <local_identifier>Input_Product_List</local_identifier>
-            <local_identifier>Process</local_identifier>
+            <identifier_reference>XSChoice#</identifier_reference>
+            <identifier_reference>Input_Product_List</identifier_reference>
+            <identifier_reference>Process</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
@@ -420,10 +427,10 @@
             using the Input_Product class, and/or a list of products can be specified 
             in another product referenced by the Internal_Reference or Local_Internal_Reference.</definition>
         <DD_Association>
-            <local_identifier>XSChoice#</local_identifier>
-            <local_identifier>pds.Internal_Reference</local_identifier>
-            <local_identifier>pds.Local_Internal_Reference</local_identifier>
-            <local_identifier>Input_Product</local_identifier>
+            <identifier_reference>XSChoice#</identifier_reference>
+            <identifier_reference>pds.Internal_Reference</identifier_reference>
+            <identifier_reference>pds.Local_Internal_Reference</identifier_reference>
+            <identifier_reference>Input_Product</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
@@ -438,16 +445,16 @@
         <definition>The Input_Product class describes one of the product most directly used as input to software for product creation,
             including raw, partially-processed, calibrated, or derived products.</definition>
         <DD_Association>
-            <local_identifier>pds.local_identifier</local_identifier>
+            <identifier_reference>pds.local_identifier</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>XSChoice#</local_identifier>
-            <local_identifier>pds.Internal_Reference</local_identifier>
-            <local_identifier>pds.Local_Internal_Reference</local_identifier>
-            <local_identifier>pds.External_Reference</local_identifier>
+            <identifier_reference>XSChoice#</identifier_reference>
+            <identifier_reference>pds.Internal_Reference</identifier_reference>
+            <identifier_reference>pds.Local_Internal_Reference</identifier_reference>
+            <identifier_reference>pds.External_Reference</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
@@ -567,31 +574,31 @@
         <definition>The Process class describes one of the software processes used to produce the data product referenced in the parent Processing_Information class. This class includes descriptions of 
         the process owner as well as the data processing software used to create the data product.</definition>
         <DD_Association>
-            <local_identifier>pds.name</local_identifier>
+            <identifier_reference>pds.name</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>pds.description</local_identifier>
+            <identifier_reference>pds.description</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>process_owner_name</local_identifier>
+            <identifier_reference>process_owner_name</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>process_owner_institution_name</local_identifier>
+            <identifier_reference>process_owner_institution_name</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>Software</local_identifier>
+            <identifier_reference>Software</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
@@ -605,43 +612,43 @@
         <submitter_name>Jordan Padams</submitter_name>
         <definition>The Software class describes the data processing software used in order to produce the data product.</definition>
         <DD_Association>
-            <local_identifier>pds.name</local_identifier>
+            <identifier_reference>pds.name</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>pds.software_id</local_identifier>
+            <identifier_reference>pds.software_id</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>pds.software_version_id</local_identifier>
+            <identifier_reference>pds.software_version_id</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>pds.software_type</local_identifier>
+            <identifier_reference>pds.software_type</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>pds.description</local_identifier>
+            <identifier_reference>pds.description</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>pds.Internal_Reference</local_identifier>
+            <identifier_reference>pds.Internal_Reference</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>Software_Program</local_identifier>
+            <identifier_reference>Software_Program</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
@@ -655,61 +662,61 @@
         <submitter_name>Jordan Padams</submitter_name>
         <definition>The Software_Program class describes the specific components or tasks of the Software executed in producing the data product.</definition>
         <DD_Association>
-            <local_identifier>pds.name</local_identifier>
+            <identifier_reference>pds.name</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>program_type_name</local_identifier>
+            <identifier_reference>program_type_name</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>program_user</local_identifier>
+            <identifier_reference>program_user</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>program_hostname</local_identifier>
+            <identifier_reference>program_hostname</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>program_path</local_identifier>
+            <identifier_reference>program_path</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>program_version</local_identifier>
+            <identifier_reference>program_version</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>program_start_date_time</local_identifier>
+            <identifier_reference>program_start_date_time</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>program_stop_date_time</local_identifier>
+            <identifier_reference>program_stop_date_time</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>pds.description</local_identifier>
+            <identifier_reference>pds.description</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>Software_Program_Parameters</local_identifier>
+            <identifier_reference>Software_Program_Parameters</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
@@ -724,7 +731,7 @@
         <definition>The Software_Program_Parameters class specifies the set of 1 or more parameters for the software program. These parameters can be input, output, or log information. The premise being 
         a way to capture as much information as possible about the software program execution.</definition>
         <DD_Association>
-            <local_identifier>Parameter</local_identifier>
+            <identifier_reference>Parameter</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
@@ -740,28 +747,28 @@
         log information, and references to specific data products. This class is intended to be freeform to allow data providers the ability to specify information they determine applicable and useful for their 
         data processing software and data products.</definition>
         <DD_Association>
-            <local_identifier>pds.name</local_identifier>
+            <identifier_reference>pds.name</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>parameter_type</local_identifier>
+            <identifier_reference>parameter_type</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>pds.value</local_identifier>
+            <identifier_reference>pds.value</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>1</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
         </DD_Association>
         <DD_Association>
-            <local_identifier>XSChoice#</local_identifier>
-            <local_identifier>pds.Internal_Reference</local_identifier>
-            <local_identifier>pds.Local_Internal_Reference</local_identifier>
-            <local_identifier>pds.External_Reference</local_identifier>
+            <identifier_reference>XSChoice#</identifier_reference>
+            <identifier_reference>pds.Internal_Reference</identifier_reference>
+            <identifier_reference>pds.Local_Internal_Reference</identifier_reference>
+            <identifier_reference>pds.External_Reference</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>*</maximum_occurrences>
