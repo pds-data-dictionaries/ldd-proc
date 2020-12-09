@@ -13,16 +13,16 @@
     <steward_id>img</steward_id>
     <namespace_id>proc</namespace_id>
     <comment> The Processing_Information dictionary contains detailed information regarding the history 
-      of processing performed on data product(s) in order to produce the current product.
+        of processing performed on data product(s) in order to produce the current product.
                 
-      ## CHANGE LOG ##
-      1.2.0.0, T.Hare
-      - upgraded to v1.13.0.0 of the IM
-      - Allow Software to be many (unbounded) to allow for many applictions to be listed for one process.
+        ## CHANGE LOG ##
+        1.2.0.0, T.Hare
+        - upgraded to v1.13.0.0 of the IM
+        - Allow Software to be many (unbounded) to allow for many applictions to be listed for one process.
     
-      1.2.1.0 T.Hare
-      - update for 1.E.0.0 and 1.F.0.0 and new github C.I. environment
-      - Changed all class local_identifier to identifier_reference per v1900 IM update
+        1.2.1.0 T.Hare
+        - update for 1.E.0.0 and 1.F.0.0 and new github C.I. environment
+        - Changed all class local_identifier to identifier_reference per v1900 IM update
     
     </comment>
     <last_modification_date_time>2020-12-08T20:00:00Z</last_modification_date_time>
