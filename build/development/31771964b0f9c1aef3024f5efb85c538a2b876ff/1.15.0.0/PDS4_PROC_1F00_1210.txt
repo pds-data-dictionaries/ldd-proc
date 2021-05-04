@@ -1,18 +1,18 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        12.0.0
+   LDDTool Version        13.0.2
    LDD Version Id:        1.2.1.0
    LDD Label Version Id:  1.0
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Wed Dec 09 03:03:57 UTC 2020
+   Time                   Tue May 04 05:13:28 UTC 2021
    Common Schema          [PDS4_PDS_1F00.xsd]
    Common Schematron      [PDS4_PDS_1F00.sch]
    IM Version Id:         1.15.0.0
    IM Namespace Id:       pds
-   IM Label Version Id:   1.21
+   IM Label Version Id:   1.0
    IM Object Model        [UpperModel.pont]
    IM Data Dictionary     [dd11179.pins]
    IM Configuration File  [MDPTNConfigClassDisp.xml]
@@ -45,16 +45,16 @@ Parsed Input - Header:
    Steward                img
    Namespace Id           proc
    Comment                 The Processing_Information dictionary contains detailed information regarding the history 
-      of processing performed on data product(s) in order to produce the current product.
+        of processing performed on data product(s) in order to produce the current product.
                 
-      ## CHANGE LOG ##
-      1.2.0.0, T.Hare
-      - upgraded to v1.13.0.0 of the IM
-      - Allow Software to be many (unbounded) to allow for many applictions to be listed for one process.
+        ## CHANGE LOG ##
+        1.2.0.0, T.Hare
+        - upgraded to v1.13.0.0 of the IM
+        - Allow Software to be many (unbounded) to allow for many applictions to be listed for one process.
     
-      1.2.1.0 T.Hare
-      - update for 1.E.0.0 and 1.F.0.0 and new github C.I. environment
-      - Changed all class local_identifier to identifier_reference per v1900 IM update
+        1.2.1.0 T.Hare
+        - update for 1.E.0.0 and 1.F.0.0 and new github C.I. environment
+        - Changed all class local_identifier to identifier_reference per v1900 IM update
     
     
    Last Modification Time 2020-12-08T20:00:00Z
