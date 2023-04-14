@@ -3,7 +3,6 @@ The Processing Information (PROC) Sub-Model contains detailed information regard
 
 Steward: [Ron Joyner, EN](mailto:ronald.joyner@jpl.nasa.gov)
 
-
 # Documentation
 
 See this namespace's online documentation at https://pds-data-dictionaries.github.io/ldd-proc for a User Guide and Detailed Documentation on this namespace.
