@@ -180,7 +180,37 @@
             </DD_Permissible_Value>
         </DD_Value_Domain>
     </DD_Attribute>
-
+    
+    <DD_Attribute>
+        <name>software_availability</name>
+        <version_id>1.0</version_id>
+        <local_identifier>software_availability</local_identifier>
+        <nillable_flag>false</nillable_flag>
+        <submitter_name>Caden Gobat</submitter_name>
+        <definition>The software_availability attribute specifies the public availability/release status of the software.</definition>
+        <DD_Value_Domain>
+            <enumeration_flag>true</enumeration_flag>
+            <value_data_type>ASCII_Short_String</value_data_type>
+            <DD_Permissible_Value>
+                <value>Open source</value>
+                <value_meaning>the software and its source code are freely available to the public</value_meaning>
+            </DD_Permissible_Value>
+            <DD_Permissible_Value>
+                <value>Released</value>
+                <value_meaning>the software (but not its source code) is publicly available in some form</value_meaning>
+            </DD_Permissible_Value>
+            <DD_Permissible_Value>
+                <value>Proprietary</value>
+                <value_meaning>the software is proprietary, i.e. it may not be available to all members of the
+                    public or it might require a paid license</value_meaning>
+            </DD_Permissible_Value>
+            <DD_Permissible_Value>
+                <value>Unreleased</value>
+                <value_meaning>the software has not been published externally at all</value_meaning>
+            </DD_Permissible_Value>
+        </DD_Value_Domain>
+    </DD_Attribute>
+    
     <!-- Attributes END -->
     
     
@@ -319,6 +349,12 @@
         </DD_Association>
         <DD_Association>
             <identifier_reference>pds.software_type</identifier_reference>
+            <reference_type>attribute_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>software_availability</identifier_reference>
             <reference_type>attribute_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
