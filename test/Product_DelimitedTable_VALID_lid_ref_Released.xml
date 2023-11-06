@@ -4,7 +4,7 @@
     xmlns:pds="http://pds.nasa.gov/pds4/pds/v1"
     xmlns:proc="http://pds.nasa.gov/pds4/proc/v1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-   
+    
     <Identification_Area>
         <logical_identifier>urn:nasa:pds:example.dph.sampleproducts:exampleproducts:streamdelimited.co-s-inst-2-dummy-data-v1.0</logical_identifier>
         <version_id>1.0</version_id>
@@ -83,7 +83,7 @@
                      </pds:Internal_Reference>
                     <pds:Local_Internal_Reference>
                         <pds:comment>comment2</pds:comment>
-                        <pds:local_identifier_reference>ID_0011</pds:local_identifier_reference>
+                        <pds:local_identifier_reference>ID_001</pds:local_identifier_reference>
                         <!-- Single enumerated value: 'data_to_input_product' -->
                         <pds:local_reference_type>data_to_input_product</pds:local_reference_type>
                     </pds:Local_Internal_Reference>
@@ -105,7 +105,7 @@
                         <proc:name>test_software_instance</proc:name>
                         <proc:software_id>software_id_test</proc:software_id>
                         <proc:software_version_id>software_version_id_001</proc:software_version_id>
-                        <proc:software_availability>Unreleased</proc:software_availability>
+                        <proc:software_availability>Released</proc:software_availability>                        
                         <proc:software_type>software_type_has_software</proc:software_type>
                         <proc:description>Test instance of metadata for the PROC LDD</proc:description>
                         <pds:Internal_Reference>
@@ -128,7 +128,7 @@
                                 <proc:Parameter>
                                     <proc:name>name3</proc:name>
                                     <!-- Three enumerated values: ('Input', 'Log', 'Output') -->                            
-                                    <proc:parameter_type>Output</proc:parameter_type>
+                                    <proc:parameter_type>Log</proc:parameter_type>
                                     <proc:value>value0</proc:value>
                                     <!-- Choice between 'Internal_Reference' or 'Local_Internal_Reference' or 'External_Reference' -->                                                                                          
                                     <pds:Internal_Reference>
