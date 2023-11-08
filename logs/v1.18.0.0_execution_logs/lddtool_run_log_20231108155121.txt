@@ -1,9 +1,9 @@
 
 >>  INFO LDDTOOL Version: 14.3.0
->>  INFO IM Version Id: 1.21.0.0
+>>  INFO IM Version Id: 1.18.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.27
->>  INFO Date: Wed Nov 08 15:14:56 UTC 2023
+>>  INFO IM Label Version Id: 1.24
+>>  INFO Date: Wed Nov 08 15:51:22 UTC 2023
 >>  INFO PARENT_DIR: /tmp/lddtool-14.3.0
 >>  INFO SCRIPT_DIR: /tmp/lddtool-14.3.0/bin
 >>  INFO LIB_DIR: /tmp/lddtool-14.3.0/lib
@@ -11,27 +11,27 @@
 >>> INFO Init:  - Config.Properties Namespace Id Found:proc
 >>> INFO Init:  - Config.Properties Namespace Id Using:proc
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
->>> WARNING Attribute: <software_availability> - An attribute with the enumeration_flag = true must have at least one permissible value.
 
  -- LDDTool Execution Summary --
-     1 warning(s)
+     0 warning(s)
      0 error(s)
      0 fatal error(s)
 
 Input:
 
-     - IM Version: 1L00
+     - IM Version: 1I00
      - PDS4 Flag: true
      - LDD Flag: true
+     - IM Version: true
      - Export JSON Flag: true
 
      - Ingest LDD(s): /home/runner/work/ldd-proc/ldd-proc/src/PDS4_PROC_IngestLDD.xml
 
 Output:
 
-     - ./PDS4_PROC_1L00_1300.xsd
-     - ./PDS4_PROC_1L00_1300.sch
-     - ./PDS4_PROC_1L00_1300.xml
-     - ./export/JSON/PDS4_PDS_1L00.JSON
+     - ./PDS4_PROC_1I00_1300.xsd
+     - ./PDS4_PROC_1I00_1300.sch
+     - ./PDS4_PROC_1I00_1300.xml
+     - ./export/JSON/PDS4_PDS_1I00.JSON
 
 >>  INFO Exit(0)

@@ -3,7 +3,7 @@
 >>  INFO IM Version Id: 1.19.0.0
 >>  INFO IM Namespace Id: pds
 >>  INFO IM Label Version Id: 1.25
->>  INFO Date: Wed Nov 08 15:15:03 UTC 2023
+>>  INFO Date: Wed Nov 08 15:51:09 UTC 2023
 >>  INFO PARENT_DIR: /tmp/lddtool-14.3.0
 >>  INFO SCRIPT_DIR: /tmp/lddtool-14.3.0/bin
 >>  INFO LIB_DIR: /tmp/lddtool-14.3.0/lib
@@ -11,10 +11,9 @@
 >>> INFO Init:  - Config.Properties Namespace Id Found:proc
 >>> INFO Init:  - Config.Properties Namespace Id Using:proc
 >>> INFO Init:  - LDD Dictionary_Type is Discipline
->>> WARNING Attribute: <software_availability> - An attribute with the enumeration_flag = true must have at least one permissible value.
 
  -- LDDTool Execution Summary --
-     1 warning(s)
+     0 warning(s)
      0 error(s)
      0 fatal error(s)
 
