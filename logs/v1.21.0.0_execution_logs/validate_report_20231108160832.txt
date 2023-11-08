@@ -3,13 +3,13 @@ PDS Validate Tool Report
 
 Configuration:
    Version                       3.3.0
-   Date                          2023-11-08T15:51:16Z
+   Date                          2023-11-08T16:08:34Z
 
 Parameters:
-   Targets                       [file:/home/runner/work/ldd-proc/ldd-proc/build/development/4725752916582684b3d21182b8a69ad276f36c5f/1.19.0.0/PDS4_PROC_1J00_1300.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_OpenSource.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_log.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_Unreleased.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_input.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_Proprietary.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_Released.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lidvid_ref.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_output.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_PubAvail.xml]
+   Targets                       [file:/home/runner/work/ldd-proc/ldd-proc/build/development/e506500b346f7561ca99dc1cac69c96acd305863/1.21.0.0/PDS4_PROC_1L00_1300.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_OpenSource.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_log.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_Unreleased.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_input.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_Proprietary.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_Released.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lidvid_ref.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_output.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_PubAvail.xml]
    Rule Type                     pds4.label
-   User Specified Schemas        [file:/home/runner/work/ldd-proc/ldd-proc/build/development/4725752916582684b3d21182b8a69ad276f36c5f/1.19.0.0/PDS4_PROC_1J00_1300.xsd, file:/tmp/PDS4_PDS_1J00.xsd]
-   User Specified Schematrons    [file:/home/runner/work/ldd-proc/ldd-proc/build/development/4725752916582684b3d21182b8a69ad276f36c5f/1.19.0.0/PDS4_PROC_1J00_1300.sch, file:/tmp/PDS4_PDS_1J00.sch]
+   User Specified Schemas        [file:/home/runner/work/ldd-proc/ldd-proc/build/development/e506500b346f7561ca99dc1cac69c96acd305863/1.21.0.0/PDS4_PROC_1L00_1300.xsd, file:/tmp/PDS4_PDS_1L00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-proc/ldd-proc/build/development/e506500b346f7561ca99dc1cac69c96acd305863/1.21.0.0/PDS4_PROC_1L00_1300.sch, file:/tmp/PDS4_PDS_1L00.sch]
    Severity Level                WARNING
    Recurse Directories           true
    File Filters Used             [*.xml, *.XML]
@@ -22,7 +22,7 @@ Parameters:
 
 Product Level Validation Results
 
-  PASS: file:/home/runner/work/ldd-proc/ldd-proc/build/development/4725752916582684b3d21182b8a69ad276f36c5f/1.19.0.0/PDS4_PROC_1J00_1300.xml
+  PASS: file:/home/runner/work/ldd-proc/ldd-proc/build/development/e506500b346f7561ca99dc1cac69c96acd305863/1.21.0.0/PDS4_PROC_1L00_1300.xml
         1 product validation(s) completed
 
   PASS: file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_OpenSource.xml
@@ -77,19 +77,17 @@ Fatal error: [node=null,object=null,url=file:/home/runner/work/ldd-proc/ldd-proc
       WARNING  [warning.label.missing_schematron_spec]   No schematron specification found in the label.
         11 product validation(s) completed
 
-  FAIL: file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_PubAvail.xml
-      ERROR  [error.label.schematron]   line 114, 53: PROC:error: The attribute proc:Software/proc:software_availability must be equal to one of the following values 'Open source', 'Released', 'Proprietary', 'Unreleased'.
-      ERROR  [error.label.schematron]   line 114, 53: The attribute proc:Software/proc:software_availability must be equal to one of the following values 'Open source', 'Proprietary', 'Released', 'Unreleased'.
+  PASS: file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_PubAvail.xml
         12 product validation(s) completed
 
 Summary:
 
-  3 error(s)
+  1 error(s)
   19 warning(s)
 
   Product Validation Summary:
-    10         product(s) passed
-    2          product(s) failed
+    11         product(s) passed
+    1          product(s) failed
     0          product(s) skipped
 
   Referential Integrity Check Summary:
@@ -98,12 +96,11 @@ Summary:
     0          check(s) skipped
 
   Message Types:
-    2            error.label.schematron
     1            error.label.schema
     1            error.validation.missing_required_file
     9            warning.label.schema
     9            warning.label.missing_schematron_spec
 
 End of Report
-Completed execution in 7273 ms
+Completed execution in 7337 ms
 
