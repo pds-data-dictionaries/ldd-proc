@@ -111,7 +111,7 @@
                         <proc:name>test_software_instance</proc:name>
                         <proc:software_id>software_id_test</proc:software_id>
                         <proc:software_version_id>software_version_id_001</proc:software_version_id>
-                        <proc:software_availability>Publically Available</proc:software_availability>                        
+                        <proc:software_availability>Released</proc:software_availability>                        
                         <proc:software_type>software_type_has_software</proc:software_type>
                         <proc:description>Test instance of metadata for the PROC LDD</proc:description>
                         <pds:Internal_Reference>
