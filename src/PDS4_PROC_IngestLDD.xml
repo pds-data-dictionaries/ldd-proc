@@ -37,9 +37,10 @@
         1.4.0.0 R.Joyner
         - Update to 1.21.0.0 / 1.L.0.0
         - Added software_availability as new attribute
+        - Edited definition of software_availability attribute to include enumerated values 
 
     </comment>
-    <last_modification_date_time>2022-06-08T20:00:00Z</last_modification_date_time>
+    <last_modification_date_time>2023-11-08T20:00:00Z</last_modification_date_time>
     
     <!-- Attributes START -->
 
@@ -48,13 +49,28 @@
         <version_id>1.0</version_id>
         <local_identifier>software_availability</local_identifier>
         <nillable_flag>false</nillable_flag>
-        <submitter_name>Ronald Joyner</submitter_name>
-        <definition>The software_availability attribute refers to the extent
-            to which a software application is accessible and operational when 
-            needed and is an aspect of software quality.</definition>
+        <submitter_name>Caden Gobat</submitter_name>
+        <definition>The software_availability attribute specifies the public availability/release status of the software.</definition>
         <DD_Value_Domain>
             <enumeration_flag>true</enumeration_flag>
             <value_data_type>ASCII_Short_String_Collapsed</value_data_type>
+            <DD_Permissible_Value>
+                <value>Open source</value>
+                <value_meaning>the software and its source code are freely available to the public</value_meaning>
+            </DD_Permissible_Value>
+            <DD_Permissible_Value>
+                <value>Released</value>
+                <value_meaning>the software (but not its source code) is publicly available in some form</value_meaning>
+            </DD_Permissible_Value>
+            <DD_Permissible_Value>
+                <value>Proprietary</value>
+                <value_meaning>the software is proprietary, i.e. it may not be available to all members of the
+                    public or it might require a paid license</value_meaning>
+            </DD_Permissible_Value>
+            <DD_Permissible_Value>
+                <value>Unreleased</value>
+                <value_meaning>the software has not been published externally at all</value_meaning>
+            </DD_Permissible_Value>
         </DD_Value_Domain>
     </DD_Attribute>
     
@@ -497,8 +513,8 @@
         <rule_context>//proc:Software/proc:software_availability</rule_context>
         <DD_Rule_Statement>
             <rule_type>Assert</rule_type>
-            <rule_test>. = ('Unreleased', 'Proprietary', 'Open Source', 'Publically Available')</rule_test>
-            <rule_message>PROC:error: The attribute proc:Software/proc:software_availability must be equal to one of the following values 'Unreleased', 'Proprietary', 'Open Source', 'Publically Available'.</rule_message>
+            <rule_test>. = ('Open source', 'Released', 'Proprietary', 'Unreleased')</rule_test>
+            <rule_message>PROC:error: The attribute proc:Software/proc:software_availability must be equal to one of the following values 'Open source', 'Released', 'Proprietary', 'Unreleased'.</rule_message>
         </DD_Rule_Statement>
     </DD_Rule>
     
