@@ -3,13 +3,13 @@ PDS Validate Tool Report
 
 Configuration:
    Version                       3.3.0
-   Date                          2023-11-08T15:11:03Z
+   Date                          2023-11-08T15:15:03Z
 
 Parameters:
-   Targets                       [file:/home/runner/work/ldd-proc/ldd-proc/build/development/24c42c5dcd10bba075e8dc0faee7312507b4d980/1.20.0.0/PDS4_PROC_1K00_1300.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_OpenSource.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_log.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_Unreleased.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_input.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_Proprietary.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_Released.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lidvid_ref.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_output.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_PubAvail.xml]
+   Targets                       [file:/home/runner/work/ldd-proc/ldd-proc/build/development/d26140381049e637c7ade6f2d4c434ffdcb6116a/1.21.0.0/PDS4_PROC_1L00_1300.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_OpenSource.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_log.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_Unreleased.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_input.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_Proprietary.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_Released.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lidvid_ref.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_output.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref.xml, file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_PubAvail.xml]
    Rule Type                     pds4.label
-   User Specified Schemas        [file:/home/runner/work/ldd-proc/ldd-proc/build/development/24c42c5dcd10bba075e8dc0faee7312507b4d980/1.20.0.0/PDS4_PROC_1K00_1300.xsd, file:/tmp/PDS4_PDS_1K00.xsd]
-   User Specified Schematrons    [file:/home/runner/work/ldd-proc/ldd-proc/build/development/24c42c5dcd10bba075e8dc0faee7312507b4d980/1.20.0.0/PDS4_PROC_1K00_1300.sch, file:/tmp/PDS4_PDS_1K00.sch]
+   User Specified Schemas        [file:/home/runner/work/ldd-proc/ldd-proc/build/development/d26140381049e637c7ade6f2d4c434ffdcb6116a/1.21.0.0/PDS4_PROC_1L00_1300.xsd, file:/tmp/PDS4_PDS_1L00.xsd]
+   User Specified Schematrons    [file:/home/runner/work/ldd-proc/ldd-proc/build/development/d26140381049e637c7ade6f2d4c434ffdcb6116a/1.21.0.0/PDS4_PROC_1L00_1300.sch, file:/tmp/PDS4_PDS_1L00.sch]
    Severity Level                WARNING
    Recurse Directories           true
    File Filters Used             [*.xml, *.XML]
@@ -22,7 +22,7 @@ Parameters:
 
 Product Level Validation Results
 
-  PASS: file:/home/runner/work/ldd-proc/ldd-proc/build/development/24c42c5dcd10bba075e8dc0faee7312507b4d980/1.20.0.0/PDS4_PROC_1K00_1300.xml
+  PASS: file:/home/runner/work/ldd-proc/ldd-proc/build/development/d26140381049e637c7ade6f2d4c434ffdcb6116a/1.21.0.0/PDS4_PROC_1L00_1300.xml
         1 product validation(s) completed
 
   FAIL: file:/home/runner/work/ldd-proc/ldd-proc/test/Product_DelimitedTable_VALID_lid_ref_OpenSource.xml
@@ -105,5 +105,5 @@ Summary:
     9            warning.label.missing_schematron_spec
 
 End of Report
-Completed execution in 7020 ms
+Completed execution in 6623 ms
 
