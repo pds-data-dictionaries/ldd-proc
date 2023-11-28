@@ -10,7 +10,6 @@ on:
        - '!gh-pages'
      paths:
        - src/**
-       - test/**
        - .github/**
        - pds4_versions.txt
    workflow_dispatch:
