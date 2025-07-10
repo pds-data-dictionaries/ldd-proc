@@ -6,7 +6,7 @@
 <Ingest_LDD xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd">
     
     <name>Processing_Information</name>
-    <ldd_version_id>1.3.0.0</ldd_version_id>
+    <ldd_version_id>1.5.0.0</ldd_version_id>
     <dictionary_type>Discipline</dictionary_type>
     <full_name>Ron Joyner</full_name>
     <steward_id>en</steward_id>
@@ -44,7 +44,7 @@
         - Added pds.External_Reference to the Software class
 
     </comment>
-    <last_modification_date_time>2023-11-08T20:00:00Z</last_modification_date_time>
+    <last_modification_date_time>2025-07-10T10:00:00Z</last_modification_date_time>
     
     <!-- Attributes START -->
 
