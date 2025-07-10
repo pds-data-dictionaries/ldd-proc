@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model
-    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1L00.sch"
+    href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.sch"
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
 
-<Ingest_LDD xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1L00.xsd">
+<Ingest_LDD xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd">
     
     <name>Processing_Information</name>
     <ldd_version_id>1.3.0.0</ldd_version_id>
@@ -37,7 +37,11 @@
         1.4.0.0 R.Joyner
         - Update to 1.21.0.0 / 1.L.0.0
         - Added software_availability as new attribute
-        - Edited definition of software_availability attribute to include enumerated values 
+        - Edited definition of software_availability attribute to include enumerated values
+
+        1.5.0.0 E.Simpson
+        - Update to 1.24.0.0 / 1.O.0.0
+        - Added pds.External_Reference to the Software class
 
     </comment>
     <last_modification_date_time>2023-11-08T20:00:00Z</last_modification_date_time>
@@ -372,6 +376,12 @@
         </DD_Association>
         <DD_Association>
             <identifier_reference>pds.Internal_Reference</identifier_reference>
+            <reference_type>component_of</reference_type>
+            <minimum_occurrences>0</minimum_occurrences>
+            <maximum_occurrences>1</maximum_occurrences>
+        </DD_Association>
+        <DD_Association>
+            <identifier_reference>pds.External_Reference</identifier_reference>
             <reference_type>component_of</reference_type>
             <minimum_occurrences>0</minimum_occurrences>
             <maximum_occurrences>1</maximum_occurrences>
