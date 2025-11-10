@@ -8,7 +8,7 @@
     <name>Processing_Information</name>
     <ldd_version_id>1.5.0.0</ldd_version_id>
     <dictionary_type>Discipline</dictionary_type>
-    <full_name>Ron Joyner</full_name>
+    <full_name>Sophia Conover</full_name>
     <steward_id>en</steward_id>
     <namespace_id>proc</namespace_id>
     <comment> The Processing_Information dictionary contains detailed information regarding the history 
@@ -39,12 +39,13 @@
         - Added software_availability as new attribute
         - Edited definition of software_availability attribute to include enumerated values
 
-        1.5.0.0 E.Simpson
+        1.5.0.0 E.Simpson, J. Padams, S. Conover
         - Update to 1.24.0.0 / 1.O.0.0
         - Added pds.External_Reference to the Software class
+        - Add units and description to Parameter class
 
     </comment>
-    <last_modification_date_time>2025-07-10T10:00:00Z</last_modification_date_time>
+    <last_modification_date_time>2025-11-10T10:00:00Z</last_modification_date_time>
     
     <!-- Attributes START -->
 
