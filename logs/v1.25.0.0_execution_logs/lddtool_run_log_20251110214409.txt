@@ -1,0 +1,34 @@
+
+>>  INFO LDDTOOL Version: 16.0.0
+>>  INFO IM Version Id: 1.25.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.0
+>>  INFO Date: Mon Nov 10 21:44:11 UTC 2025
+>>  INFO PARENT_DIR: /tmp/lddtool-16.0.0/Data/
+
+>>> INFO Init:  - Config.Properties Namespace Id Found:proc
+>>> INFO Init:  - Config.Properties Namespace Id Using:proc
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+
+ -- LDDTool Execution Summary --
+     0 warning(s)
+     0 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1P00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-proc/ldd-proc/src/PDS4_PROC_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_PROC_1P00_1400.xsd
+     - ./PDS4_PROC_1P00_1400.sch
+     - ./PDS4_PROC_1P00_1400.xml
+     - ./export/PDS4_PDS_1P00.JSON
+
+>>  INFO Exit(0)
