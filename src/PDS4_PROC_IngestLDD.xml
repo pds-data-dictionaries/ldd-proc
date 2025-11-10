@@ -6,7 +6,7 @@
 <Ingest_LDD xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1O00.xsd">
     
     <name>Processing_Information</name>
-    <ldd_version_id>1.5.0.0</ldd_version_id>
+    <ldd_version_id>1.4.0.0</ldd_version_id>
     <dictionary_type>Discipline</dictionary_type>
     <full_name>Sophia Conover</full_name>
     <steward_id>en</steward_id>
@@ -34,12 +34,10 @@
         - Removed child checking DD_Rules
         - Added new rules for reference_type and internal_reference_type checks
 
-        1.4.0.0 R.Joyner
+        1.4.0.0 R.Joyner, E.Simpson, J. Padams, S. Conover
         - Update to 1.21.0.0 / 1.L.0.0
         - Added software_availability as new attribute
         - Edited definition of software_availability attribute to include enumerated values
-
-        1.5.0.0 E.Simpson, J. Padams, S. Conover
         - Update to 1.24.0.0 / 1.O.0.0
         - Added pds.External_Reference to the Software class
         - Add units and description to Parameter class
