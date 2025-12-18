@@ -1,7 +1,7 @@
 # Processing Information Discipline Sub-Model
 The Processing Information (PROC) Sub-Model contains detailed information regarding the history of processing performed on data product(s) in order to produce the current product.
 
-Steward: [Ron Joyner, EN](mailto:ronald.joyner@jpl.nasa.gov)
+Steward: [Sophia Conover](sophia.n.conover@jpl.nasa.gov)
 
 # Documentation
 
